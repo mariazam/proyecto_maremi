@@ -20,7 +20,9 @@
 
 <!--navegador-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Maremi</a>
+    <a class="navbar-brand" href="#">
+      <img src="img/logo .jpg"  class="d-block w-20 " alt=""> 
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,20 +30,21 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
             Categoria
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Cartera</a>
-            <a class="dropdown-item" href="#">Mochila</a>
+            <a class="dropdown-item" href="carteras.html">Cartera</a>
+            <a class="dropdown-item" href="mochilas.html">Mochila</a>
+            <a class="dropdown-item" href="bandoleras.html">Bandolera</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Algo mas aqui</a>
           </div>
         </li>
         <li class="nav-item">
@@ -63,6 +66,7 @@
 <div class="container">
     <div class="row">
         <div class="col-2"></div>
+        <!--comienso del 3 -->
         <div class="col-8">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         
@@ -70,18 +74,37 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <!-- Agrega un nuevo indicador para la nueva imagen -->
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
         
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/mochila.jpg"  class="d-block w-100 " alt="">
+                      <!--usando mx-auto para centrar la imagen-->
+                      <a href="mochilas.html">
+                        <img src="img/mochila.jpg"  class="mx-auto  d-block w-75 " alt="">
+                      </a>
                     </div>
+
                     <div class="carousel-item">
-                        <img src="img/cartera_negra.jpeg" class="d-block w-100 " alt="">
+                      <a href="carteras.html">
+                        <img src="img/cartera_negra.jpeg" class="mx-auto  d-block w-75 " alt="">
+                      </a>
                     </div>
+
                     <div class="carousel-item">
-                        <img src="img/cartera_marron.jpeg"  class="d-block w-100 " alt="">
+                      <a href="carteras.html">
+                        <img src="img/cartera_marron.jpg"  class="mx-auto d-block w-75 " alt="">
+                      </a>
                     </div>
+
+                    <!-- Agrega la nueva imagen -->
+                    <div class="carousel-item">
+                      <a href="bandoleras.html">
+                        <img src="img/bandolera_rosa.jpg" class="mx-auto d-block w-75" alt="">
+                      </a>
+                    </div>
+
                 </div>
         
                 <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -96,12 +119,16 @@
             <!--fin carrusel-->
 
         </div>
+
         <div class="col-2"></div>
     </div>
-    
-    
-        
+       
  </div>
+
+
+
+
+
     
 
 
