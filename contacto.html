@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carteras</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+      /* Estilos personalizados para el título "Carteras" tuve que ponerlo aqui porque no se centra */
+      .titulo {
+          /*font-size: 2.5em;*/
+          color: #5e0d0d; /* Color del texto */
+          margin-bottom: 10px;
+          /* Utilizando la fuente Lobster desde Google Fonts */
+          font-family: 'Lobster', Castellar;
+      }
+    </style>
 </head>
 <body>
   
@@ -36,7 +46,7 @@
           <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">login</a>
+          <a class="nav-link" href="login.html">login</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -69,7 +79,8 @@
       <img src="img/logo_2.jpg" alt="Maremi" style="max-width: 600px;">
     </div>
 
-    <h2 class="mt-4">Contacto</h2>
+    <h2 class="titulo">Contacto</h2>
+
     <!--inicio formulario-->
     <form id="formularioContacto">
 
@@ -85,7 +96,7 @@
 
       <div class="form-group">
         <label for="telefono">Teléfono:</label>
-        <input type="tel" class="form-control" id="telefono" required>
+        <input type="tel" class="form-control" id="telefono" placeholder="telefono" required>
       </div>
 
       <div class="form-group">
