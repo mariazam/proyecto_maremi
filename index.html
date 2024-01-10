@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maremi.cl</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+      /* Estilo para el contenedor del video */
+      .video-container {
+        max-width: 5px; /* Ancho máximo deseado */
+        margin: 20px 20px 40px 20px; /* Espacio alrededor del video (arriba, derecha, abajo, izquierda) */
+      }
+
+      /* Estilo para el video cuadrado */
+      video {
+        width: 40%; /* Ajusta el ancho al 100% del contenedor */
+        height: 30%; /* Ajusta la altura automáticamente */
+        border: 1px solid #ccc; /* Agrega un borde para resaltar el cuadro */
+      }
+
+    </style>
 </head>
 <body>
   
@@ -121,6 +136,13 @@
                 </button>
             </div>
             <!--fin carrusel-->
+            <br>
+            <br>
+            
+            <video controls width="40%">
+              <source src="img/video_maremi.mp4" type="video/mp4">
+              Tu navegador no soporta el elemento de video.
+            </video>
 
         </div>
 
@@ -128,6 +150,8 @@
     </div>
        
  </div>
+
+
 
 
 
