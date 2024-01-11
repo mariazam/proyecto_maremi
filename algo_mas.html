@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mochilas</title>
+    <title>carteras</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    
     <style>
         /* Estilos personalizados para el título "Carteras" tuve que ponerlo aqui porque no se centra */
         .titulo {
@@ -17,6 +16,11 @@
             /* Utilizando la fuente Lobster desde Google Fonts */
             font-family: 'Lobster', Castellar;
         }
+        .card-title{
+          /* Utilizando la fuente Lobster desde Google Fonts */
+          font-family: 'Lobster', Georgia, 'Times New Roman', Times, serif;
+
+        }
         .bi-instagram{
           color: rgb(201, 57, 105);
         }
@@ -24,7 +28,6 @@
           color: green;
         }
     </style>
-
 </head>
 <body>
   
@@ -35,8 +38,7 @@
 </body>
 </html>
 
-
-<!--navegador-->
+<!--Inicio del menu-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">
     <img src="img/logo .jpg"  class="d-block w-20 " alt=""> 
@@ -47,18 +49,17 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+      <!--inicio-->
       <li class="nav-item active">
         <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
       </li>
 
+      <!--Contacto-->
       <li class="nav-item">
         <a class="nav-link" href="contacto.html">Contacto</a>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="login.html">login</a>
-      </li>
-
+      <!--Categoria-->
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
           Categoria
@@ -71,11 +72,10 @@
           <a class="dropdown-item" href="algo_mas.html">Algo mas aqui</a>
         </div>
       </li>
+      
+      <!--LOGO DE REDES SOCIALES-->
 
-      <li class="nav-item">
-        <a class="nav-link disabled">Disabled</a>
-      </li>
-
+      <!--wa-->
       <li class="nav-item">
         <a class="nav-link " href="https://wa.me/message/TVA5I3RNLYLAB1">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
@@ -83,7 +83,7 @@
           </svg>
         </a>
       </li>
-
+      <!--instagran-->
       <li class="nav-item">
         <a class="nav-link " href="https://www.instagram.com/maremi.chile?igsh=NXZlM3J3cTg4eGp3">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -91,71 +91,97 @@
           </svg>
         </a>
       </li>
-
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <!--buscador-->
+    <form class="form-inline my-2 my-lg-0 mr-3">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
     </form>
+
+    <!-- Enlace de login -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+      </li>
+    </ul>
+
   </div>
 </nav>
 
-<!--FIN DEL MENU-->
-
-
-
-
-<!--TITULO-->
-<h1 class="titulo"></h1>
-<br>
+<!--FIN DEL Menu-->
 
 
 <!--inicio del container-->
+
 <div class="container">
     <div class="row">
         <!--usando mx-auto para centrar la imagen-->
-        <div class="col-3">
+        <!--contenedor 1-->
+        <div class="col-ms-3 mb-3 ml-2 mr-2  ">
 
-            <div class="card " style="width: 18rem;">
-                <img src="img/mochila.jpg" class="card-img-top  " alt="...">
+            <div class="card" style="width: 15rem;">
+                <img src="img/cartera_marron.jpg" class="card-img-top  " alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p class="descripcion"> 
+                    <li>Precio: 21990</li>
+                    <li>color: negro</li>
+                    <li>Material:semi cuero</li>
+                    <li>stock: disponible</li>
+                    <li>cantidad: 4</li></p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
 
         </div>
-        
-        <div class="col-3">
-             <div class="card " style="width: 18rem; margin-left: 10px;">
-                <img src="img/mochila_cartera.jpg" class="card-img-top text-center" alt="...">
+        <!--contenedor 2-->
+        <div class="col-ms-3 mb-3 ml-2 mr-2">
+             <div class="card" style="width: 15rem">
+                <img src="img/cartera_negra.jpeg" class="card-img-top text-center" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">Cartera</h5>
+                    <p class="card-text">
+                      <li>Precio: 14990</li>
+                      <li>color: negro</li>
+                      <li>Material:semi cuero</li>
+                      <li>stock: disponible</li>
+                      <li>cantidad: 4</li>
+                    </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
-
-        <div class="col-3">
-            <div class="card " style="width: 18rem;">
-                <img src="img/mochila_vaquita.jpg" class="card-img-top " alt="...">
+        <!--contenedor 3-->
+        <div class="col-ms-3 mb-3 ml-2 mr-2">
+            <div class="card " style="width: 15rem;">
+                <img src="img/cartera_sakura_azul.jpg" class="card-img-top " alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Cartera sakura</h5>
+                  <p class="card-text">
+                      <li>Precio: 16990</li>
+                      <li>color: negro</li>
+                      <li>Material:semi cuero</li>
+                      <li>stock: disponible</li>
+                      <li>cantidad: 4</li>
+                  </p>
+                  <a href="cartera_sakura.html" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
-
-        <div class="col-3">
-            <div class="card mx-3 mb-3" style="width: 18rem;">
-                <img src="img/cartera_marron.jpg" class="card-img-top text-center" alt="...">
+        <!--contenedor 4-->
+        <div class="col-ms-3 mb-3 ml-2 mr-2">
+            <div class="card" style="width: 15rem;">
+                <img src="img/bandolera_azul_f.jpg" class="card-img-top text-center" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Cartera de sailor moon</h5>
+                  <p class="descripcion">
+                      <li>Precio: 21990</li>
+                      <li>color: negro</li>
+                      <li>Material:semi cuero</li>
+                      <li>stock: disponible</li>
+                      <li>cantidad: 4</li>
+                  </p>
+                  <a href="cartera_sailor.html" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
@@ -163,3 +189,7 @@
     </div>
 </div>
 <!--fin del conteiner -->
+
+
+
+
