@@ -2,3 +2,81 @@
     margin-left: 10px;
 }
 
+/*estitlo de la pagina principal*/
+.titulovideo {
+        /*font-size: 2.5em;*/
+        color: #5e0d0d; /* Color del texto */
+        margin-bottom: 10px;
+        /* Utilizando la fuente Lobster desde Google Fonts */
+        font-family: 'Lobster', Castellar;
+      }
+
+ /* Estilo para el contenedor del video */
+ .video-container {
+    max-width: 5px; /* Ancho máximo deseado */
+    margin: 20px 20px 40px 20px; /* Espacio alrededor del video (arriba, derecha, abajo, izquierda) */
+  }
+
+  /* Estilo para el video cuadrado */
+  video {
+    width: 40%; /* Ajusta el ancho al 100% del contenedor */
+    height: 30%; /* Ajusta la altura automáticamente */
+    border: 1px solid #ccc; /* Agrega un borde para resaltar el cuadro */
+  }
+  image {
+    width: 40%; /* Ajusta el ancho al 100% del contenedor */
+    height: 30%; /* Ajusta la altura automáticamente */
+  }
+
+  
+  .bi-instagram{
+    color: rgb(201, 57, 105);
+  }
+  .bi-whatsapp{
+    color: green;
+  }
+
+  /*fin del estitlo de la principal*/
+
+  /*Inicio del estilo de la pg cartera*/
+
+   /* Estilos personalizados para el título "Carteras" tuve que ponerlo aqui porque no se centra */
+   .titulo {
+    font-size: 2.5em;
+    color: #5e0d0d; /* Color del texto */
+    text-align: center;
+    margin-bottom: 20px;
+    /* Utilizando la fuente Lobster desde Google Fonts */
+    font-family: 'Lobster', Castellar;
+}
+.card-title{
+  /* Utilizando la fuente Lobster desde Google Fonts */
+  font-family: 'Lobster', Georgia, 'Times New Roman', Times, serif;
+
+}
+
+ /*Fin del estilo de la pg cartera*/
+
+
+ .descripcion{
+    /* Utilizando la fuente Lobster desde Google Fonts */
+    font-family: 'Lobster', Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.titulo {
+    /*font-size: 2.5em;*/
+    color: #5e0d0d; /* Color del texto */
+    margin-bottom: 10px;
+    /* Utilizando la fuente Lobster desde Google Fonts */
+    font-family: 'Lobster', Castellar;
+  }
+
+
+  /*datos del fomulario en negrita*/
+  .form-group{
+    font-weight: bold; 
+  }
+

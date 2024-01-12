@@ -6,27 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>carteras</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <style>
-      /* Estilos personalizados para el título "Carteras" tuve que ponerlo aqui porque no se centra */
-      .titulo {
-          /*font-size: 2.5em;*/
-          color: #5e0d0d; /* Color del texto */
-          margin-bottom: 10px;
-          /* Utilizando la fuente Lobster desde Google Fonts */
-          font-family: 'Lobster', Castellar;
-      }
-      /*datos del fomulario en negrita*/
-      .form-group{
-        font-weight: bold; 
-      }
-      .bi-instagram{
-        color: rgb(201, 57, 105);
-      }
-      .bi-whatsapp{
-        color: green;
-      }
-     
-    </style>
+    <script type="text/javascript" src="js/validaciones.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
@@ -139,11 +120,38 @@
       </div>
 
       <div class="form-group">
+        <label for="nombre">Direccion:</label>
+        <input type="text" class="form-control" id="direccion" placeholder="ingrese direccion" required>
+      </div>
+
+      <div class="form-group">
         <label for="mensaje">Mensaje:</label>
         <textarea class="form-control" id="mensaje" rows="5" placeholder="comentario" required></textarea>
       </div>
 
       <button type="submit" class="btn btn-primary">Enviar</button>
+
+        <!--Modal de Confirmación-->
+      <div class="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--fin del modal-->
 
     </form>
     <!--fin formulario-->

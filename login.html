@@ -6,20 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maremi.cl</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <style>
-        /*datos del fomulario en negrita*/
-        .form-group{
-          font-weight: bold; 
-        }
-        .bi-instagram{
-          color: rgb(201, 57, 105);
-        }
-        .bi-whatsapp{
-          color: green;
-        }
-
-       
-      </style>
+    <script type="text/javascript" src="js/validaciones.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
@@ -111,7 +99,7 @@
       <img src="img/logo_2.jpg" alt="Maremi" style="max-width: 600px;">
     </div>
     <!--login-->
-    <form>
+    <form id="formulariLogin">
         <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ingrese email" aria-describedby="emailHelp" required>
