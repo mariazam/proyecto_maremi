@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script type="text/javascript" src="js/validaciones.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
   
@@ -91,6 +92,7 @@
 </nav>
 
 <!--FIN DEL Menu-->
+<!--FIN DEL Menu-->
 
 
 <div class="container mt-5">
@@ -104,53 +106,56 @@
     <!--inicio formulario-->
     <form id="formularioContacto">
 
-      <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" class="form-control" id="nombre" placeholder="ingrese nombre" required>
-      </div>
+      <form id="formularioContacto" >
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre" required>
+        </div>
 
       <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="ingrese email" required>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingrese su Correo" required>
       </div>
 
       <div class="form-group">
         <label for="telefono" >Teléfono:</label>
-        <input type="tel" class="form-control" id="telefono" placeholder="ingrese telefono" required>
+        <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su Telefono" required>
       </div>
 
       <div class="form-group">
         <label for="nombre">Direccion:</label>
-        <input type="text" class="form-control" id="direccion" placeholder="ingrese direccion" required>
+        <input type="text" class="form-control" id="direccion" placeholder="Ingrese su Direccion" required>
       </div>
 
       <div class="form-group">
         <label for="mensaje">Mensaje:</label>
-        <textarea class="form-control" id="mensaje" rows="5" placeholder="comentario" required></textarea>
-      </div>
+        <textarea class="form-control" id="mensaje" rows="5" placeholder="Escriba un Mensaje(Opcional)"></textarea>
+    </div>
 
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <button type="button" class="btn btn-primary" onclick="submitForm2()">Enviar</button>
 
         <!--Modal de Confirmación-->
-      <div class="modal" tabindex="-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>Modal body text goes here.</p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contacto Enviado </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¡Tu Contacto se ha enviado correctamente!
+                    </div>
+                    <div class="modal-footer">
+                        <button  type="button" class="btn btn-secondary" data-dismiss="modal" onclick="limpiarFormulario();">Cerrar</button>
+                    </div>
+                </div>
             </div>
-          </div>
-      </div>
+        </div>
+    
+      
+    
       <!--fin del modal-->
 
     </form>

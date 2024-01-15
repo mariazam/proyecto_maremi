@@ -7,7 +7,7 @@
     <title>Maremi.cl</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script type="text/javascript" src="js/validaciones.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
   
@@ -99,16 +99,37 @@
       <img src="img/logo_2.jpg" alt="Maremi" style="max-width: 600px;">
     </div>
     <!--login-->
-    <form id="formulariLogin">
-        <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ingrese email" aria-describedby="emailHelp" required>
-        </div>
-        <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" placeholder="ingrese password" id="exampleInputPassword1" required>
-        </div>
-        <button type="submit" class="btn btn-primary">ingresar</button>
+    <form id="formularioLogin">
+      <div class="form-group">
+          <label for="exampleInputEmail1">Correo Electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su Correo" aria-describedby="emailHelp" required>
+      </div>
+      <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control" placeholder="Ingrese su Contraseña" id="exampleInputPassword1" required>
+      </div>
+      <button type="button" class="btn btn-primary" onclick="submitForm()">Iniciar Sesion</button>
+
+      <!-- Modal de Confirmación -->
+      <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Inicio de Sesión Exitoso</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      Haga click en Cerrar para Continuar
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="redirigirAIndex();">Cerrar</button>
+                  </div>
+              </div>
+          </div>
+      </div>
     </form>
-    <!--fin del login-->
+    <!--fin del modal-->
+
 </div>
